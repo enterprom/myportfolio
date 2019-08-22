@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Aldrich&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+      <div id="container">
+        <div class="wrap">
+      <div id="header">
+        <div class="wrapcher">
+        <div class="wrapper">
+        <div class="logo">
+          <span class="logo__text">My portfolio</span></div>
+             <menu>
+            <div class="menu-navbar__item">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#project">Project</a></li>
+              <li><a href="#about-me">About me</a></li>
+              <li><a href="#contacts">Contact</a></li>
+              </ul>   
+            </div>
+            <div class="menu-navbar__item-mob">
+                <ul>
+                <li><a class="menu-back" href="#">Home</a></li>
+                <li><a class="menu-back" href="#project">Project</a></li>
+                <li><a class="menu-back" href="#about-me">About me</a></li>
+                <li><a class="menu-back" href="#contacts">Contact</a></li>
+              </ul>
+            </div>
+        <a href="#menu" class="menu-link">
+            <span class="links">
+
+            </span>
+            <span class="links1">
+
+            </span>
+            <span class="links2">
+
+            </span>
+          </a>
+        </menu>
+        </div>
+      </div>
+        </div>
+        </div>
+        </div>
+        <main>
+        <div class="main-wrap" id="project">
+          <div class="main-block">
+            my site
+            <a class="main-block__button">
+              More
+            </a>
+          </div>
+          <div class="main-block">
+            my site
+            <a class="main-block__button">
+              More
+            </a>
+          </div>
+          <div class="main-block">
+            my site
+            <a class="main-block__button">
+              More
+            </a>
+          </div>
+        </div>
+        <div class="main-wrapper" id="about-me">
+        <div class="main-about">
+            «Портрет Д. А. Фурманова» («Портрет писателя Д. А. Фурманова») — картина российского и советского художника Сергея Малютина, созданная в 1922 году. Находится в коллекции Государственной Третьяковской галереи. На ней изображён видный участник гражданской войны и советский писатель Дмитрий Андреевич Фурманов. «Портрет Д. А. Фурманова» — самое известное произведение художника и одно из лучших произведений советской портретной живописи. Искусствовед, автор монографии о творчестве художника, И. Илюшин назвал картину «подлинным триумфом портретного искусства», писал, что советский человек не может представить писателя иным, чем изобразил его художник на этом полотне. По мнению доктора искусствоведения Дмитрия Сарабьянова, художнику удалось запечатлеть на портрете образ нового советского человека — интеллигента и гуманиста, ставшего преемником всего прогрессивного, что было в культурном наследии дореволюционной России.
+
+            Кандидат искусствоведения Кира Сазонова считала, что «Портрет Д. А. Фурманова» необычен по своей живописно-пластической структуре и использованным художником поэтическим средствам. С одной стороны, он достаточно традиционен (создан в продолжение реалистических традиций дореволюционной России). С другой стороны, портрет не только был произведением нового времени, но и закладывал сам фундамент нового искусства. Кандидат искусствоведения Валентина Князева считала, что картина Малютина создавала основы будущего метода социалистического реализма, так как она передаёт в личности героя как индивидуальное начало, так и типичные черты человека своего времени.
+        </div>
+        </div>
+
+      </main>
+      <footer id="contacts">
+        <ul class="social">
+          <li class="social__item google">
+            <i class="fa fa-google"></i>
+          </li>
+          <li class="social__item whatsapp">
+            <i class="fa fa-whatsapp"></i>
+          </li>
+          <li class="social__item telegram">
+            <i class="fa fa-telegram"></i>
+          </li>
+          <li class="social__item skype">
+              <i class="fa fa-skype"></i>
+          </li>
+</ul>
+      <a href="#" id="link-up">
+        <span>
+          
+        </span>
+      </a>
+      </footer>
+      <script src="js/jquery-3.4.1.min.js"></script>
+<script>
+        $('.menu-link').on('click', function(e) {
+            e.preventDefault();
+        $('.menu-navbar__item-mob').toggleClass('menu-navbar__item-mob_active');
+})
+        $('.menu-back').on('click', function(){
+        $('.menu-navbar__item-mob').toggleClass('menu-navbar__item-mob_active');
+})
+    </script>
+    <script type="text/javascript">
+ 
+      $(function() {
+       
+      $(window).scroll(function() {
+       
+      if($(this).scrollTop() != 0) {
+       
+      $('#link-up').fadeIn();
+       
+      } else {
+       
+      $('#link-up').fadeOut();
+       
+      }
+       
+      });
+       
+      $('#link-up').click(function() {
+       
+      $('body,html').animate({scrollTop:0},800);
+       
+      });
+       
+      });
+       
+      const menuMob = document.querySelector('.menu-link');
+      const menuBack = document.querySelector('.menu-navbar__item-mob');
+      menuMob.addEventListener('click', () => {
+        document.body.style.overflow = 'hidden';
+      });
+      menuBack.addEventListener('click', () => {
+        document.body.style.overflow = '';
+      });
+      </script>
+
+</body>
+</html>
