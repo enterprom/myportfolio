@@ -31,6 +31,15 @@
               </ul>   
             </div>
             <div class="menu-navbar__item-mob">
+              <div class="links-close">
+                <span class="link-close1">
+                  
+                </span>
+                <span class="link-close2">
+
+                </span>
+              </div>
+              
                 <ul>
                 <li><a class="menu-back" href="#">Home</a></li>
                 <li><a class="menu-back" href="#project">Project</a></li>
@@ -78,36 +87,35 @@
         </div>
         <div class="main-wrapper" id="about-me">
         <div class="main-about">
-            «Портрет Д. А. Фурманова» («Портрет писателя Д. А. Фурманова») — картина российского и советского художника Сергея Малютина, созданная в 1922 году. Находится в коллекции Государственной Третьяковской галереи. На ней изображён видный участник гражданской войны и советский писатель Дмитрий Андреевич Фурманов. «Портрет Д. А. Фурманова» — самое известное произведение художника и одно из лучших произведений советской портретной живописи. Искусствовед, автор монографии о творчестве художника, И. Илюшин назвал картину «подлинным триумфом портретного искусства», писал, что советский человек не может представить писателя иным, чем изобразил его художник на этом полотне. По мнению доктора искусствоведения Дмитрия Сарабьянова, художнику удалось запечатлеть на портрете образ нового советского человека — интеллигента и гуманиста, ставшего преемником всего прогрессивного, что было в культурном наследии дореволюционной России.
-
-            Кандидат искусствоведения Кира Сазонова считала, что «Портрет Д. А. Фурманова» необычен по своей живописно-пластической структуре и использованным художником поэтическим средствам. С одной стороны, он достаточно традиционен (создан в продолжение реалистических традиций дореволюционной России). С другой стороны, портрет не только был произведением нового времени, но и закладывал сам фундамент нового искусства. Кандидат искусствоведения Валентина Князева считала, что картина Малютина создавала основы будущего метода социалистического реализма, так как она передаёт в личности героя как индивидуальное начало, так и типичные черты человека своего времени.
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
+            More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More More 
         </div>
         </div>
 
       </main>
       <footer id="contacts">
-        <div class="form-group">
-          <label for=""></label>
-          <input type="text">
-        </div>
-        <div class="form-group">
-            <label for=""></label>
-            <input type="text">
-        </div>
-        <ul class="social">
-          <li class="social__item google">
+        <div class="social">
+          <a href="mailto:lastavengerintheworld@gmail.com" class="social__item google">
             <i class="fa fa-google"></i>
-          </li>
-          <li class="social__item whatsapp">
+          </a>
+          <a href="whatsapp://send?phone=+380956322112" class="social__item whatsapp">
             <i class="fa fa-whatsapp"></i>
-          </li>
-          <li class="social__item telegram">
+          </a>
+          <a href="https://t.me/carbehind" target="_blank" class="social__item telegram">
             <i class="fa fa-telegram"></i>
-          </li>
-          <li class="social__item skype">
+          </a>
+          <a  href="skype:admin530521227?call" class="social__item skype">
               <i class="fa fa-skype"></i>
-          </li>
-</ul>
+          </a>
+        </div>
       <a href="#" id="link-up">
         <span>
           
@@ -116,13 +124,6 @@
       </footer>
       <script src="js/jquery-3.4.1.min.js"></script>
 <script>
-        $('.menu-link').on('click', function(e) {
-            e.preventDefault();
-        $('.menu-navbar__item-mob').toggleClass('menu-navbar__item-mob_active');
-})
-        $('.menu-back').on('click', function(){
-        $('.menu-navbar__item-mob').toggleClass('menu-navbar__item-mob_active');
-})
     </script>
     <script type="text/javascript">
  
@@ -150,13 +151,22 @@
        
       });
        
-      const menuMob = document.querySelector('.menu-link');
-      const menuBack = document.querySelector('.menu-navbar__item-mob');
-      menuMob.addEventListener('click', () => {
-        document.body.style.overflow = 'hidden';
+      const btnMenuLink = document.querySelector('.menu-link');
+      const btnMenuMob = document.querySelector('.menu-navbar__item-mob');
+      const btnMenuMobUl = document.querySelector('.menu-navbar__item-mob ul')
+      const btnMenuclose = document.querySelector('.links-close');
+      
+      btnMenuLink.addEventListener('click', () => {
+      btnMenuMob.style.right = '0vw';
+      document.body.style.overflow = 'hidden';
       });
-      menuBack.addEventListener('click', () => {
-        document.body.style.overflow = '';
+      btnMenuMobUl.addEventListener('click', () =>{
+      btnMenuMob.style.right = '-100vw'; 
+      document.body.style.overflow  = '';
+      });
+      btnMenuclose.addEventListener('click', () =>{
+      btnMenuMob.style.right = '-100vw';
+      document.body.style.overflow  = '';
       });
       </script>
 

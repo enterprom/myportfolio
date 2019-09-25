@@ -96,21 +96,18 @@ li {
   display: none;
   width: 50px;
   height: 50px;
-  background-color: #ffffff;
   border-radius: 50%;
   position: absolute;
-  top: 20px;
+  top: 15px;
   right: 50px;
-  -webkit-box-shadow: 1px 1px 10px black;
-          box-shadow: 1px 1px 10px black;
-  z-index: 9;
+  z-index: 0;
 }
 
 .links {
   display: block;
   height: 2px;
   width: 18px;
-  background-color: black;
+  background-color: #fff;
   position: absolute;
   left: 50%;
   margin-left: -9px;
@@ -124,7 +121,7 @@ li {
   display: block;
   height: 2px;
   width: 18px;
-  background: black;
+  background: #fff;
   position: absolute;
   left: 50%;
   margin-left: -9px;
@@ -138,28 +135,12 @@ li {
   display: block;
   height: 2px;
   width: 18px;
-  background: black;
+  background: #fff;
   position: absolute;
   left: 50%;
   margin-left: -9px;
   top: 50%;
   margin-top: -6px;
-}
-
-.menu-link_active .links {
-  background: transparent;
-}
-
-.menu-link_active .links2 {
-  -webkit-transform: rotate(135deg);
-          transform: rotate(135deg);
-  margin-top: 0;
-}
-
-.menu-link_active .links1 {
-  -webkit-transform: rotate(-135deg);
-          transform: rotate(-135deg);
-  margin-top: 0;
 }
 
 .menu-navbar__item-mob {
@@ -179,10 +160,10 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  right: -100vw;
   -webkit-transition: all 1s;
   transition: all 1s;
   opacity: 0.9;
+  right: -100vw;
 }
 
 .menu-navbar__item-mob_active {
@@ -217,6 +198,45 @@ li {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.links-close {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.link-close1 {
+  display: block;
+  height: 2px;
+  width: 18px;
+  background: #fff;
+  position: absolute;
+  left: 25px;
+  margin-left: -9px;
+  top: 25px;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.link-close2 {
+  display: block;
+  height: 2px;
+  width: 18px;
+  background: #fff;
+  position: absolute;
+  left: 25px;
+  margin-left: -9px;
+  top: 25px;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
 .main-wrap {
   margin-top: -200px;
   display: -webkit-box;
@@ -246,7 +266,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 5px;
-  border: 2px solid #c8c8c8;
+  border: 2px solid #292d3e;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -420,9 +440,9 @@ a i {
   width: 70%;
   margin: 0 auto;
   background: #fff;
-  border-radius: 50px;
+  border-radius: 5px;
   padding: 15px;
-  border: 2px solid #c8c8c8;
+  border: 2px solid #292d3e;
 }
 
 @media (max-width: 875px) {
